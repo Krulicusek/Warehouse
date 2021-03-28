@@ -9,6 +9,10 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <div class="text-center">
+        <img src="@Url.Content("~/warehouse_64.ico")" />
+    </div>
+
 
     <div class="container body-content">
         @RenderBody()
@@ -21,5 +25,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+  
 </body>
 </html>

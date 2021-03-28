@@ -77,3 +77,5 @@ C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\obj\Debug\WarehouseWeb.c
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\obj\Debug\WarehouseWeb.csproj.CopyComplete
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\obj\Debug\WarehouseWeb.dll
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\obj\Debug\WarehouseWeb.pdb
+C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\bin\Dapper.dll
+C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseWeb\bin\Dapper.xml

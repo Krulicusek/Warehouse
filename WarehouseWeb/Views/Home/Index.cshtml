@@ -1,7 +1,84 @@
-﻿
+﻿@model IEnumerable<WarehouseWeb.TowaryModel>
+
 @{
-    ViewBag.Title = "Towary";
+    ViewBag.Title = "Podgląd towarów";
 }
 
-<h2>Podgląd towarów</h2>
+<div class="text-center">
+    <h2>Podgląd towarów</h2>
+</div>
+</br>
+<div class = "container">
+    <div class="row ">
+        <div class="col-md-6">
+            <form asp-controller="Home" asp-action="Index">
+                <p>
+                    Nazwa Towaru <input type="text" name="nazwa" />
+                    <input type="submit" value="Filter" />
+                </p>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form asp-controller="Home" asp-action="Index">
+                <p>
+                    ID <input type="number" name="id" />
+                    <input type="submit" value="Filter" />
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
 
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Nazwa towaru
+        </th>
+        <th>
+            Data gwarancji
+        </th>
+        <th>
+            Typ towaru
+        </th>
+        <th>
+            Ilość dostępnych
+        </th>
+        <th>
+            Ilość zarezerwowanych
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_Towaru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nazwa_Towaru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data_Gwarancji)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Typ_Towaru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ilosc_Dostepnych)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ilosc_Zarezerwowanych)
+            </td>
+            <td>
+                @Html.ActionLink("Zamów", "Zamow", new { id = item.ID_Towaru })
+
+            </td>
+        </tr>
+    }
+
+</table>

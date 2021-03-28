@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Succes";
+}
+<div class="text-center">
+    <h2>
+        Twoje zamówienie zostało złożone.
+    </h2>
+</div>
+
+</br>
+<div class="text-center">
+    <img style="max-width: 20%" src="@Url.Content("~/check.png")" />
+    <h3> Dziękujemy za skorzystanie z naszych usług.</h3>
+</div>
+
+<h3> Zamówienia realizujemy jeszcze tego samego dnia, o ile zostało złożone do godziny 18:00 w dni robocze.</h3>
+</br></br>
+<div class=" text-center">
+    <button type="button" class="btn btn-primary" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");">Powrót do przęglądania towarów</button>
+</div>
+
+
+
+
