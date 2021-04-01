@@ -14,7 +14,10 @@ namespace WarehouseClientUI
         public ZamowForm()
         {
             InitializeComponent();
-            
+            this.StartPosition = FormStartPosition.CenterScreen;
+            //uniemozliwienie maksymalizacji okna
+            this.MaximizeBox = false;
+
         }
 
         private void ZamowButton_Click(object sender, EventArgs e)

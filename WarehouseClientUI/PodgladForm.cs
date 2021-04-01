@@ -21,6 +21,9 @@ namespace WarehouseClientUI
         public PodgladForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            //uniemozliwienie maksymalizacji okna
+            this.MaximizeBox = false;
             WarehouseWebService.GetTowaryResponseBody res = new WarehouseWebService.GetTowaryResponseBody();
             //WarehouseWebService.WarehouseWebServiceSoapClient client = new WarehouseWebService.WarehouseWebServiceSoapClient();
             //towary = (TowaryDostepneModel)JsonConvert.DeserializeObject(client.GetTowaryAsync().Result);
