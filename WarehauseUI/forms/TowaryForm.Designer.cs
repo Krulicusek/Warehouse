@@ -30,9 +30,9 @@ namespace WarehouseUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TowaryForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BackButton = new WarehouseUI.MyButton();
             this.BackLabel = new System.Windows.Forms.Label();
             this.TowaryTabela = new System.Windows.Forms.DataGridView();
@@ -62,7 +62,7 @@ namespace WarehouseUI
             this.BackButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(55, 47);
-            this.BackButton.TabIndex = 22;
+            this.BackButton.TabIndex = 5;
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
@@ -81,34 +81,34 @@ namespace WarehouseUI
             // TowaryTabela
             // 
             this.TowaryTabela.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = null;
-            this.TowaryTabela.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            this.TowaryTabela.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.TowaryTabela.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.TowaryTabela.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TowaryTabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TowaryTabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.TowaryTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TowaryTabela.Location = new System.Drawing.Point(377, 55);
             this.TowaryTabela.Name = "TowaryTabela";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Format = "d";
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TowaryTabela.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.Format = "d";
+            dataGridViewCellStyle6.NullValue = null;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TowaryTabela.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.TowaryTabela.RowTemplate.Height = 25;
             this.TowaryTabela.Size = new System.Drawing.Size(723, 519);
             this.TowaryTabela.TabIndex = 23;
@@ -132,7 +132,7 @@ namespace WarehouseUI
             this.IDBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(195, 33);
-            this.IDBox.TabIndex = 30;
+            this.IDBox.TabIndex = 1;
             // 
             // NazwaLabel
             // 
@@ -153,7 +153,7 @@ namespace WarehouseUI
             this.NazwaBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwaBox.Name = "NazwaBox";
             this.NazwaBox.Size = new System.Drawing.Size(195, 33);
-            this.NazwaBox.TabIndex = 28;
+            this.NazwaBox.TabIndex = 2;
             // 
             // TowaryButton
             // 
@@ -167,7 +167,7 @@ namespace WarehouseUI
             this.TowaryButton.Location = new System.Drawing.Point(46, 485);
             this.TowaryButton.Name = "TowaryButton";
             this.TowaryButton.Size = new System.Drawing.Size(297, 89);
-            this.TowaryButton.TabIndex = 32;
+            this.TowaryButton.TabIndex = 3;
             this.TowaryButton.Text = "Podglad towarów";
             this.TowaryButton.UseVisualStyleBackColor = false;
             this.TowaryButton.Click += new System.EventHandler(this.TowaryButton_Click);
@@ -220,7 +220,7 @@ namespace WarehouseUI
             this.ShowAllButton.Location = new System.Drawing.Point(587, 600);
             this.ShowAllButton.Name = "ShowAllButton";
             this.ShowAllButton.Size = new System.Drawing.Size(297, 89);
-            this.ShowAllButton.TabIndex = 53;
+            this.ShowAllButton.TabIndex = 4;
             this.ShowAllButton.Text = "Pokaż wszystkie towary";
             this.ShowAllButton.UseVisualStyleBackColor = false;
             this.ShowAllButton.Click += new System.EventHandler(this.ShowAllButton_Click);

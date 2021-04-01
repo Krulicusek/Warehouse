@@ -82,7 +82,7 @@ namespace WarehouseUI
             this.BackButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(55, 47);
-            this.BackButton.TabIndex = 10;
+            this.BackButton.TabIndex = 8;
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
@@ -117,7 +117,7 @@ namespace WarehouseUI
             this.IDBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(195, 33);
-            this.IDBox.TabIndex = 32;
+            this.IDBox.TabIndex = 1;
             // 
             // NazwiskoLabel
             // 
@@ -138,7 +138,7 @@ namespace WarehouseUI
             this.NazwiskoBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwiskoBox.Name = "NazwiskoBox";
             this.NazwiskoBox.Size = new System.Drawing.Size(195, 33);
-            this.NazwiskoBox.TabIndex = 28;
+            this.NazwiskoBox.TabIndex = 2;
             // 
             // EdytujLabel
             // 
@@ -196,7 +196,7 @@ namespace WarehouseUI
             this.RealizujButton.Location = new System.Drawing.Point(923, 531);
             this.RealizujButton.Name = "RealizujButton";
             this.RealizujButton.Size = new System.Drawing.Size(297, 89);
-            this.RealizujButton.TabIndex = 39;
+            this.RealizujButton.TabIndex = 7;
             this.RealizujButton.Text = "Realizuj zamowienie";
             this.RealizujButton.UseVisualStyleBackColor = false;
             this.RealizujButton.Click += new System.EventHandler(this.RealizujButton_Click);
@@ -220,7 +220,7 @@ namespace WarehouseUI
             this.IDRightBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IDRightBox.Name = "IDRightBox";
             this.IDRightBox.Size = new System.Drawing.Size(195, 33);
-            this.IDRightBox.TabIndex = 44;
+            this.IDRightBox.TabIndex = 6;
             // 
             // label1
             // 
@@ -253,7 +253,7 @@ namespace WarehouseUI
             this.AdresBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.AdresBox.Name = "AdresBox";
             this.AdresBox.Size = new System.Drawing.Size(195, 33);
-            this.AdresBox.TabIndex = 50;
+            this.AdresBox.TabIndex = 3;
             // 
             // ShowAllButton
             // 
@@ -267,7 +267,7 @@ namespace WarehouseUI
             this.ShowAllButton.Location = new System.Drawing.Point(60, 531);
             this.ShowAllButton.Name = "ShowAllButton";
             this.ShowAllButton.Size = new System.Drawing.Size(297, 89);
-            this.ShowAllButton.TabIndex = 52;
+            this.ShowAllButton.TabIndex = 5;
             this.ShowAllButton.Text = "Pokaż wszystkie zamowienia";
             this.ShowAllButton.UseVisualStyleBackColor = false;
             this.ShowAllButton.Click += new System.EventHandler(this.ShowAllButton_Click);

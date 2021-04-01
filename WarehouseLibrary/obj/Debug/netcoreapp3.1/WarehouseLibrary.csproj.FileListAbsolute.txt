@@ -1,7 +1,6 @@
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\bin\Debug\netcoreapp3.1\WarehouseLibrary.deps.json
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\bin\Debug\netcoreapp3.1\WarehouseLibrary.dll
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\bin\Debug\netcoreapp3.1\WarehouseLibrary.pdb
-C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\obj\Debug\netcoreapp3.1\WarehouseLibrary.csprojAssemblyReference.cache
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\obj\Debug\netcoreapp3.1\WarehouseLibrary.AssemblyInfoInputs.cache
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\obj\Debug\netcoreapp3.1\WarehouseLibrary.AssemblyInfo.cs
 C:\Users\kubii\Desktop\Warehouse\Warehouse\WarehouseLibrary\obj\Debug\netcoreapp3.1\WarehouseLibrary.csproj.CoreCompileInputs.cache

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Server Scripts1">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DESKTOP-V0IV1VU:DESKTOP-V0IV1VU\kubii">
+          <Created>2021-03-12T12:43:14.6585799+01:00</Created>
+          <Type>SQL</Type>
+          <Server>DESKTOP-V0IV1VU</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="spTowary_Dodaj.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Dodaj.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spTowary_Dostepne.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Dostepne.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spTowary_Edytuj.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Edytuj.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spTowary_Nowy.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Nowy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spTowary_Podglad.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Podglad.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spTowary_Usun.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spTowary_Usun.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spZamowienia_Dodaj.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spZamowienia_Dodaj.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spZamowienia_Podglad.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-V0IV1VU:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-V0IV1VU</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>spZamowienia_Podglad.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spZamowienia_Realizuj.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spZamowienia_Realizuj.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spZamowienia_Usun.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spZamowienia_Usun.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Test.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-V0IV1VU:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-V0IV1VU</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Test.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

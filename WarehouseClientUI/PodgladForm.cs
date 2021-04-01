@@ -9,19 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WarehouseLibrary;
 using Newtonsoft.Json;
+using WarehouseWebService;
 
 namespace WarehouseClientUI
 {
     public partial class PodgladForm : Form
     {
+        
         private List<TowaryDostepneModel> towary = new List<TowaryDostepneModel>();
+        
         public PodgladForm()
         {
             InitializeComponent();
-           
-            towary = JsonConvert.DeserializeObject();
-         
-            towaryGrid.DataSource = towary;
+            WarehouseWebService.GetTowaryResponseBody res = new WarehouseWebService.GetTowaryResponseBody();
+            //WarehouseWebService.WarehouseWebServiceSoapClient client = new WarehouseWebService.WarehouseWebServiceSoapClient();
+            //towary = (TowaryDostepneModel)JsonConvert.DeserializeObject(client.GetTowaryAsync().Result);
+            //towary.Add((TowaryDostepneModel)JsonConvert.DeserializeObject(res.GetTowaryResult));
+
+            //towaryGrid.DataSource = towary;
         }
 
 

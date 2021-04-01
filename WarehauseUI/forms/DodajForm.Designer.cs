@@ -78,7 +78,7 @@ namespace WarehouseUI
             this.DodajIloscButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DodajIloscButton.Name = "DodajIloscButton";
             this.DodajIloscButton.Size = new System.Drawing.Size(195, 51);
-            this.DodajIloscButton.TabIndex = 4;
+            this.DodajIloscButton.TabIndex = 8;
             this.DodajIloscButton.Text = "Dodaj ilość";
             this.DodajIloscButton.UseVisualStyleBackColor = false;
             this.DodajIloscButton.Click += new System.EventHandler(this.DodajIloscButton_Click);
@@ -109,7 +109,7 @@ namespace WarehouseUI
             this.BackButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(55, 47);
-            this.BackButton.TabIndex = 6;
+            this.BackButton.TabIndex = 9;
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
@@ -150,7 +150,7 @@ namespace WarehouseUI
             this.IloscInnerBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IloscInnerBox.Name = "IloscInnerBox";
             this.IloscInnerBox.Size = new System.Drawing.Size(124, 33);
-            this.IloscInnerBox.TabIndex = 13;
+            this.IloscInnerBox.TabIndex = 7;
             // 
             // IDInnerLabel
             // 
@@ -171,7 +171,7 @@ namespace WarehouseUI
             this.ID_Box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ID_Box.Name = "ID_Box";
             this.ID_Box.Size = new System.Drawing.Size(124, 33);
-            this.ID_Box.TabIndex = 11;
+            this.ID_Box.TabIndex = 6;
             // 
             // TypBox
             // 
@@ -180,7 +180,7 @@ namespace WarehouseUI
             this.TypBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TypBox.Name = "TypBox";
             this.TypBox.Size = new System.Drawing.Size(195, 33);
-            this.TypBox.TabIndex = 5;
+            this.TypBox.TabIndex = 3;
             // 
             // TypLabel
             // 
@@ -202,7 +202,7 @@ namespace WarehouseUI
             this.IloscBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IloscBox.Name = "IloscBox";
             this.IloscBox.Size = new System.Drawing.Size(195, 33);
-            this.IloscBox.TabIndex = 9;
+            this.IloscBox.TabIndex = 4;
             // 
             // IloscOuterLabel
             // 
@@ -223,7 +223,7 @@ namespace WarehouseUI
             this.NazwaBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwaBox.Name = "NazwaBox";
             this.NazwaBox.Size = new System.Drawing.Size(195, 33);
-            this.NazwaBox.TabIndex = 11;
+            this.NazwaBox.TabIndex = 1;
             // 
             // NazwaLabel
             // 
@@ -244,7 +244,7 @@ namespace WarehouseUI
             this.DataBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DataBox.Name = "DataBox";
             this.DataBox.Size = new System.Drawing.Size(195, 33);
-            this.DataBox.TabIndex = 13;
+            this.DataBox.TabIndex = 2;
             // 
             // DataLabel
             // 
@@ -270,7 +270,7 @@ namespace WarehouseUI
             this.DodajButton.Location = new System.Drawing.Point(599, 374);
             this.DodajButton.Name = "DodajButton";
             this.DodajButton.Size = new System.Drawing.Size(297, 89);
-            this.DodajButton.TabIndex = 15;
+            this.DodajButton.TabIndex = 5;
             this.DodajButton.Text = "Dodaj towar";
             this.DodajButton.UseVisualStyleBackColor = false;
             this.DodajButton.Click += new System.EventHandler(this.DodajButton_Click);

@@ -50,7 +50,7 @@ namespace WarehouseUI
             this.UsunButton.Location = new System.Drawing.Point(46, 330);
             this.UsunButton.Name = "UsunButton";
             this.UsunButton.Size = new System.Drawing.Size(297, 89);
-            this.UsunButton.TabIndex = 15;
+            this.UsunButton.TabIndex = 2;
             this.UsunButton.Text = "Usuń towar";
             this.UsunButton.UseVisualStyleBackColor = false;
             this.UsunButton.Click += new System.EventHandler(this.UsunButton_Click);
@@ -74,7 +74,7 @@ namespace WarehouseUI
             this.ID_Box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ID_Box.Name = "ID_Box";
             this.ID_Box.Size = new System.Drawing.Size(124, 33);
-            this.ID_Box.TabIndex = 16;
+            this.ID_Box.TabIndex = 1;
             // 
             // UsunLabel
             // 
@@ -102,7 +102,7 @@ namespace WarehouseUI
             this.BackButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(55, 47);
-            this.BackButton.TabIndex = 20;
+            this.BackButton.TabIndex = 3;
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 

@@ -107,7 +107,7 @@ namespace WarehouseUI
             this.ZamowieniaButton.Location = new System.Drawing.Point(89, 502);
             this.ZamowieniaButton.Name = "ZamowieniaButton";
             this.ZamowieniaButton.Size = new System.Drawing.Size(297, 89);
-            this.ZamowieniaButton.TabIndex = 3;
+            this.ZamowieniaButton.TabIndex = 5;
             this.ZamowieniaButton.Text = "Podgląd zamowień";
             this.ZamowieniaButton.UseVisualStyleBackColor = false;
             this.ZamowieniaButton.Click += new System.EventHandler(this.ZamowieniaButton_Click);

@@ -62,7 +62,7 @@ namespace WarehouseUI
             this.BackButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(55, 47);
-            this.BackButton.TabIndex = 8;
+            this.BackButton.TabIndex = 7;
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
@@ -90,7 +90,7 @@ namespace WarehouseUI
             this.EdytujButton.Location = new System.Drawing.Point(115, 498);
             this.EdytujButton.Name = "EdytujButton";
             this.EdytujButton.Size = new System.Drawing.Size(297, 89);
-            this.EdytujButton.TabIndex = 25;
+            this.EdytujButton.TabIndex = 6;
             this.EdytujButton.Text = "Edytuj towar";
             this.EdytujButton.UseVisualStyleBackColor = false;
             this.EdytujButton.Click += new System.EventHandler(this.EdytujButton_Click);
@@ -114,7 +114,7 @@ namespace WarehouseUI
             this.DataBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DataBox.Name = "DataBox";
             this.DataBox.Size = new System.Drawing.Size(195, 33);
-            this.DataBox.TabIndex = 23;
+            this.DataBox.TabIndex = 3;
             // 
             // NazwaLabel
             // 
@@ -135,7 +135,7 @@ namespace WarehouseUI
             this.NazwaBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwaBox.Name = "NazwaBox";
             this.NazwaBox.Size = new System.Drawing.Size(195, 33);
-            this.NazwaBox.TabIndex = 21;
+            this.NazwaBox.TabIndex = 2;
             // 
             // IloscLabel
             // 
@@ -156,7 +156,7 @@ namespace WarehouseUI
             this.IloscBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IloscBox.Name = "IloscBox";
             this.IloscBox.Size = new System.Drawing.Size(195, 33);
-            this.IloscBox.TabIndex = 19;
+            this.IloscBox.TabIndex = 5;
             // 
             // TypLabel
             // 
@@ -178,7 +178,7 @@ namespace WarehouseUI
             this.TypBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TypBox.Name = "TypBox";
             this.TypBox.Size = new System.Drawing.Size(195, 33);
-            this.TypBox.TabIndex = 17;
+            this.TypBox.TabIndex = 4;
             // 
             // EdytujLabel
             // 
@@ -211,7 +211,7 @@ namespace WarehouseUI
             this.IDBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(195, 33);
-            this.IDBox.TabIndex = 26;
+            this.IDBox.TabIndex = 1;
             // 
             // label2
             // 

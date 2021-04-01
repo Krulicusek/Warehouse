@@ -8,6 +8,7 @@ using System.Web.Services;
 using Dapper;
 using Newtonsoft.Json;
 
+
 namespace WarehouseWeb
 {
    // Webservice for WarehouseClientUI that allows for sending order request, and getting list of warehouse items
@@ -55,6 +56,7 @@ namespace WarehouseWeb
                 //wykonuje procedure
                 List<TowaryModel> towary = new List<TowaryModel>();
                 towary = connection.Query<TowaryModel>(procedure, parameters, commandType: CommandType.StoredProcedure).ToList();
+                
                 return JsonConvert.SerializeObject(towary);
                 
                 
