@@ -14,7 +14,7 @@ namespace WarehouseWeb
             //zamiana parametrow podanych jako string, na int, na wszelki wypadek wczesniej przypisuje do zmiennych 0 gdyby konwersja nie udala sie
             
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
-            // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku app.config
+            // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku web.config
             using (IDbConnection connection = new SqlConnection(CnnStringParser.CnnValue("StoredProcedures")))
             {
                 // deklaruje dynamiczne parametry, oraz nazwe procedury 
@@ -31,7 +31,7 @@ namespace WarehouseWeb
         public void SendZamowienie(int id, int ilosc, string imie, string nazwisko, string adres, string dostawa)
         {
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
-            // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku app.config
+            // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku web.config
            
             
                 using (IDbConnection connection = new SqlConnection(CnnStringParser.CnnValue("StoredProcedures")))

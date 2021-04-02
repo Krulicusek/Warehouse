@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Services;
 using Dapper;
 using Newtonsoft.Json;
-
+using WarehouseLibrary;
 
 namespace WarehouseWeb
 {
@@ -54,8 +54,8 @@ namespace WarehouseWeb
                 var procedure = "[dbo].[spTowary_Dostepne]";
                 DynamicParameters parameters = new DynamicParameters();
                 //wykonuje procedure
-                List<TowaryModel> towary = new List<TowaryModel>();
-                towary = connection.Query<TowaryModel>(procedure, parameters, commandType: CommandType.StoredProcedure).ToList();
+                List<TowaryDostepneModel> towary = new List<TowaryDostepneModel>();
+                towary = connection.Query<TowaryDostepneModel>(procedure, parameters, commandType: CommandType.StoredProcedure).ToList();
                 
                 return JsonConvert.SerializeObject(towary);
                 

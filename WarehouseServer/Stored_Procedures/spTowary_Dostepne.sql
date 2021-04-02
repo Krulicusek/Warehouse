@@ -8,6 +8,6 @@ CREATE PROCEDURE dbo.spTowary_Dostepne
 AS
 BEGIN
 SET NOCOUNT ON;	
-		SELECT Nazwa_Towaru,Data_Gwarancji,Ilosc_Dostepnych FROM  dbo.Towary WHERE Ilosc_Dostepnych > 0
+		SELECT ID_Towaru,Nazwa_Towaru,Data_Gwarancji,Ilosc_Dostepnych FROM  dbo.Towary WHERE Ilosc_Dostepnych > 0
 END
 GO

@@ -6,11 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WarehouseLibrary;
-using ServiceReference1;
+using WarehouseService;
 
 using Newtonsoft.Json;
 using System.Net;
 using System.Configuration;
+using System.ServiceModel;
 
 namespace WarehouseClientUI
 {
@@ -32,26 +33,21 @@ namespace WarehouseClientUI
 
         private void fillRequestBody()
         {
-            var timout = new TimeSpan(39);
-
-            var client = new ServiceReference1.WarehouseWebServiceSoapClient(timout,"https://localhost:44334/WarehouseWebService.asmx");
-           client.GetTowaryAsync();
+            // configurating webservice endpoints programmicaly setting binding security mode to transport to support https connection
+            var binding = new BasicHttpBinding();
+            binding.Security.Mode = BasicHttpSecurityMode.Transport;
+            var client = new WarehouseService.WarehouseWebServiceSoapClient(binding, new EndpointAddress("https://localhost:44334/WarehouseWebService.asmx"));
+                                       
+             
             
-             //var res = new GetTowaryResponseBody();
-            
-            //var req = new WarehouseWebServiceReference.SendZamowienieRequestBody();
-            //req.imie = "s";
-            //var client = new WarehouseWebServiceReference.WarehouseWebServiceSoapClient();
-            //client.GetTowaryAsync();
-            //MessageBox.Show(JsonConvert.SerializeObject(res));
+          
 
-            client.SendZamowienieAsync(1, 1, "a","b","c","d");
+            
             //zamowienie.ilosc = 0;
             //int.TryParse(IloscBox.Text,out zamowienie.ilosc);
             //zamowienie.id = 1;
-            //SendZamowienieResponse response = new SendZamowienieResponse();
-            //MessageBox.Show();
 
+           
         }
        private bool ValidateForm()
         {

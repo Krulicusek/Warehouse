@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WarehouseLibrary;
 using Newtonsoft.Json;
-
+using WarehouseService;
+using System.ServiceModel;
 
 namespace WarehouseClientUI
 {
     public partial class PodgladForm : Form
     {
         
-        private List<TowaryDostepneModel> towary = new List<TowaryDostepneModel>();
+       
         
         public PodgladForm()
         {
@@ -24,16 +25,13 @@ namespace WarehouseClientUI
             this.StartPosition = FormStartPosition.CenterScreen;
             //uniemozliwienie maksymalizacji okna
             this.MaximizeBox = false;
+            // configurating webservice endpoints programmicaly setting binding security mode to transport to support https connection
+            var binding = new BasicHttpBinding();
+            binding.Security.Mode = BasicHttpSecurityMode.Transport;
 
-           
-
-            //    WarehouseWebService.GetTowaryResponseBody res = new WarehouseWebService.GetTowaryResponseBody();
-
-            //WarehouseWebService.WarehouseWebServiceSoapClient client = new WarehouseWebService.WarehouseWebServiceSoapClient();
-            ////towary = (TowaryDostepneModel)JsonConvert.DeserializeObject(client.GetTowaryAsync().Result);
-            //towary.Add((TowaryDostepneModel)JsonConvert.DeserializeObject(res.GetTowaryResult));
-
-            //towaryGrid.DataSource = towary;
+            var client = new WarehouseService.WarehouseWebServiceSoapClient(binding, new EndpointAddress("https://localhost:44334/WarehouseWebService.asmx"));         
+                        
+            towaryGrid.DataSource = JsonConvert.DeserializeObject(client.GetTowary());
         }
 
 
