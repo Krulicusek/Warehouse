@@ -14,8 +14,13 @@ IF (EXISTS(SELECT * FROM dbo.Towary WHERE ID_Towaru = @ID_Towaru))
 	BEGIN
 		UPDATE dbo.Towary  SET Nazwa_Towaru = @Nazwa_Towaru, Data_Gwarancji = @Data_Gwarancji, Typ_Towaru = @Typ_Towaru, Ilosc_Dostepnych=@Ilosc_Dostepnych
 		WHERE ID_Towaru = @ID_Towaru;
+		RETURN 1;
 	END
 	--Komunikat w razie nie znalezienia danych dla @ID_Towaru
-ElSE PRINT 'ERROR NO RECORDS FOUND AT @ID_Towaru';
+ElSE 
+	BEGIN
+	PRINT 'ERROR NO RECORDS FOUND AT @ID_Towaru';
+	RETURN 0;
+	END
 END
 GO

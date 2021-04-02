@@ -95,11 +95,17 @@ namespace WarehouseUI
             {
                 RealizujModel realizujModel = new RealizujModel(IDRightBox.Text);
                 // wykonuje procedure realizacji zamowienia
-                db.Realizuj(realizujModel.ID_Zamowienia);
-                //czysci pole
-                IDRightBox.Clear();
-                // wyswietla kominikat
-                MessageBox.Show("Zrealizowano zamowienie");
+                if (db.Realizuj(realizujModel.ID_Zamowienia))
+                {
+                    //czysci pole
+                    IDRightBox.Clear();
+                    // wyswietla kominikat
+                    MessageBox.Show("Zrealizowano zamowienie");
+                }
+            else
+                {
+                    MessageBox.Show("Brak zamowienia o podanym ID_Zamowienia");
+                }
             }
         }
 

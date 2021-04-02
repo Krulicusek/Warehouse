@@ -40,8 +40,12 @@ CREATE PROCEDURE dbo.spZamowienia_Dodaj
 			VALUES (@ID_Towaru,	@Ilosc,	@Data_Zamowienia, @Imie, @Nazwisko, @Adres,	@Dostawa);
 
 			UPDATE dbo.Towary SET Ilosc_Dostepnych = @Roznica, Ilosc_Zarezerwowanych = @Suma_Zarezerwowanych WHERE ID_Towaru = @ID_Towaru
-	
-			END ELSE PRINT 'Ilosc_Dostepnych towarow nie wystarczajaca na zamowienie'
+			RETURN 1;
+			END
+		ELSE BEGIN
+			PRINT 'Ilosc_Dostepnych towarow nie wystarczajaca na zamowienie'
+			RETURN 0;
+			END
 		END
 	END
 	GO

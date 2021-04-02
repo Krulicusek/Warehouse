@@ -12,7 +12,7 @@ namespace WarehouseUI
 {
 public  class DataAccess
     {
-        public void DodajIlosc (int id, int ilosc)
+        public bool DodajIlosc (int id, int ilosc)
         {   
            
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
@@ -23,10 +23,20 @@ public  class DataAccess
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@ID_Towaru", id, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@Ilosc", ilosc, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
                 //wykonuje procedure
-               connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+
+                //Checking status of Stored Procedure Call
+                int returnValue = parameters.Get<int>("@Return");
+                if (returnValue == 0)
+                {
+                    return false;
+                }
+                else return true;
             }
         }
+        
         public void DodajNowy(string nazwaTowaru, DateTime dataGwarancji, string typTowaru, int ilosc)
         {
             
@@ -46,7 +56,7 @@ public  class DataAccess
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
             }
         }
-        public void Edytuj(int id, string nazwaTowaru, DateTime dataGwarancji, string typTowaru, int ilosc)
+        public bool Edytuj(int id, string nazwaTowaru, DateTime dataGwarancji, string typTowaru, int ilosc)
         {
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
             // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku app.config
@@ -59,8 +69,16 @@ public  class DataAccess
                 parameters.Add("@Data_Gwarancji", dataGwarancji, DbType.Date, ParameterDirection.Input);
                 parameters.Add("@Typ_Towaru", typTowaru, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Ilosc_Dostepnych", ilosc, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
                 //wykonuje procedure
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                //Checking status of Stored Procedure Call
+                int returnValue = parameters.Get<int>("@Return");
+                if (returnValue == 0)
+                {
+                    return false;
+                }
+                else return true;
             }
         }
         public bool UsunTowar(int id)
@@ -75,6 +93,7 @@ public  class DataAccess
                 parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
                 //wykonuje procedure
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                //Checking status of Stored Procedure Call
                 int returnValue = parameters.Get<int>("@Return");
                 if (returnValue == 0)
                 {
@@ -125,7 +144,7 @@ public  class DataAccess
                 return connection.Query<ZamowieniaModel>(procedure, parameters, commandType: CommandType.StoredProcedure).ToList();
             }
         }
-        public void Realizuj(int id)
+        public bool Realizuj(int id)
         {
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
             // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku app.config
@@ -134,8 +153,16 @@ public  class DataAccess
                 var procedure = "[dbo].[spZamowienia_Realizuj]";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@ID_Zamowienia", id, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
                 //wykonuje procedure
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                int returnValue = parameters.Get<int>("@Return");
+                //Checking status of Stored Procedure Call
+                if (returnValue == 0)
+                {
+                    return false;
+                }
+                else return true;
             }
         }
 

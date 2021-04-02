@@ -40,11 +40,18 @@ namespace WarehouseUI
                 DataAccess db = new DataAccess();
                 EdytujModel edytujModel = new EdytujModel(IDBox.Text, NazwaBox.Text, dt, TypBox.Text, IloscBox.Text);
                 // wykonuje procedure edycji towaru
-                db.Edytuj(edytujModel.ID_Towaru, edytujModel.Nazwa_Towaru, edytujModel.Data_Gwarancji, edytujModel.Typ_Towaru, edytujModel.Ilosc);
-                // czysci pola
-                ClearFields();
-                //wyswietlanie komunikatu
-                MessageBox.Show("Edytowano towar.");
+                if(db.Edytuj(edytujModel.ID_Towaru, edytujModel.Nazwa_Towaru, edytujModel.Data_Gwarancji, edytujModel.Typ_Towaru, edytujModel.Ilosc))
+                {
+                    // czysci pola
+                    ClearFields();
+                    //wyswietlanie komunikatu
+                    MessageBox.Show("Edytowano towar.");
+                }
+                else
+                {
+                    MessageBox.Show("Brak Towaru o podanym ID_Towaru");
+                }
+               
             }
         }
 

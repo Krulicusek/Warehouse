@@ -37,10 +37,12 @@ CREATE PROCEDURE dbo.spZamowienia_Usun
 	--Usuwanie zamowienia oraz zwracanie towaru do magazynu
 	DELETE FROM dbo.Zamowienia WHERE ID_Zamowienia = @ID_Zamowienia;
 	UPDATE dbo.Towary SET Ilosc_Dostepnych = @Suma, Ilosc_Zarezerwowanych = @Roznica WHERE ID_Towaru = @ID_Towaru;
+	RETURN 1;
 		END
 
 	--Komunikat w razie gdyby nie istnialo zamowienie o podanym ID_Zamowienia
 	ELSE 
 	PRINT 'ERROR NO RECORDS FOUND AT @ID_Zamowienia';
+	RETURN 0;
 	END
 	GO

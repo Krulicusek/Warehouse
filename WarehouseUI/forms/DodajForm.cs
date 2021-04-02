@@ -53,16 +53,22 @@ namespace WarehouseUI
 
         private void DodajIloscButton_Click(object sender, EventArgs e)
         {
-           if ( ValidateInnerForm() ) 
+            if (ValidateInnerForm())
             {
-                
+
                 IloscModel iloscModel = new IloscModel(ID_Box.Text, IloscInnerBox.Text);
                 // wykonuje procedure dodania dostepnych towarow
-                db.DodajIlosc(iloscModel.ID_Towaru, iloscModel.Ilosc);
+
+                if (db.DodajIlosc(iloscModel.ID_Towaru, iloscModel.Ilosc)) { 
                 // czysci pola
                 ClearInnerFields();
                 // wyswietla kominikat o pomyslym dodaniu towarow
                 MessageBox.Show("Liczba dostepnych towarow wzrosla");
+            }
+            else
+            {
+                MessageBox.Show("Brak Towaru o podanym ID_Towaru.");
+            }
             }
            
         }

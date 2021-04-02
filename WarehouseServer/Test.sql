@@ -73,7 +73,7 @@ EXEC dbo.spTowary_Podglad null, null
  --     Umozliwia podglad towarow dostepnych. Zwraca wszystkie towary ktorych ilosc jest wieksza niz 0
 EXEC dbo.spTowary_Dostepne
 	--Umozliwia usuwanie Towaru  o danym ID_Towaru pod warunkiem, ze nie istnieje na niego zamowienie
-EXEC dbo.spTowary_Usun 1
+EXEC dbo.spTowary_Usun 0
 				-- dodaje nowy towar (@Nazwa_Towaru, @Data_Gwarancji, @Typ_Towaru, @Ilosc_Dostepnych)
 EXEC dbo.spTowary_Nowy 'ogryzek','2042-03-11','smieci',200
 --podglad zamowien (@ID_Zamowienia, @Nazwisko, @Adres)
