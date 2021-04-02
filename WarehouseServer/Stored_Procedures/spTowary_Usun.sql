@@ -8,11 +8,16 @@ CREATE PROCEDURE dbo.spTowary_Usun
 AS
 BEGIN
 SET NOCOUNT ON; 
-IF( NOT EXISTS (SELECT * FROM Zamowienia WHERE ID_Towaru = @ID_Towaru))
+IF( NOT EXISTS (SELECT * FROM dbo.Zamowienia WHERE ID_Towaru = @ID_Towaru) 
+	AND EXISTS (SELECT*FROM dbo.Towary WHERE ID_Towaru=@ID_Towaru))
 	BEGIN
 	DELETE FROM Towary WHERE ID_Towaru = @ID_Towaru;
+	RETURN 1
 	END
 	ELSE 
-	PRINT 'NIE MOZNA USUNAC TOWARU, NA KTORY ISTNIEJE ZAMOWIENIE!';
+	BEGIN
+	PRINT 'Nie mozna usunac Towaru! Produnkt o podanym ID_Towaru nie istnieje, badz istnieje na niego zamowienie.';
+	RETURN 0
+	END
 END
 GO

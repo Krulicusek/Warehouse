@@ -74,9 +74,9 @@ EXEC dbo.spTowary_Podglad null, null
 EXEC dbo.spTowary_Dostepne
 	--Umozliwia usuwanie Towaru  o danym ID_Towaru pod warunkiem, ze nie istnieje na niego zamowienie
 EXEC dbo.spTowary_Usun 1
-
+				-- dodaje nowy towar (@Nazwa_Towaru, @Data_Gwarancji, @Typ_Towaru, @Ilosc_Dostepnych)
 EXEC dbo.spTowary_Nowy 'ogryzek','2042-03-11','smieci',200
-
+--podglad zamowien (@ID_Zamowienia, @Nazwisko, @Adres)
 EXEC dbo.spZamowienia_Podglad null, null, ''
 
 --tworze nowa role oraz nadaje jej mozliwosc uzywania stored procedures

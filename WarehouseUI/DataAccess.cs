@@ -63,7 +63,7 @@ public  class DataAccess
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
             }
         }
-        public void UsunTowar(int id)
+        public bool UsunTowar(int id)
         {
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
             // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku app.config
@@ -71,9 +71,16 @@ public  class DataAccess
             {    // deklaruje dynamiczne parametry, oraz nazwe procedury            
                 var procedure = "[dbo].[spTowary_Usun]";
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@ID_Towaru", id, DbType.Int32, ParameterDirection.Input);                
+                parameters.Add("@ID_Towaru", id, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
                 //wykonuje procedure
                 connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                int returnValue = parameters.Get<int>("@Return");
+                if (returnValue == 0)
+                {
+                    return false;
+                }
+                else return true;
             }
         }
         public List<TowaryModel> GetTowaryModel(string idString, string nazwaTowaru)

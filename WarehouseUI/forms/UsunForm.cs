@@ -37,10 +37,14 @@ namespace WarehouseUI
                 DataAccess db = new DataAccess();
                 UsunModel usunModel = new UsunModel(ID_Box.Text);
                 // wykonuje procedure usuniecia towaru
-                db.UsunTowar(usunModel.ID_Towaru);
+                if (db.UsunTowar(usunModel.ID_Towaru))
+                {
+                    MessageBox.Show("Usunięto towar");
+                }
+                else MessageBox.Show("Nie ma Towaru o podanym ID, bądz istnieje na ten towar zamówienie.");
                 // czysci pole ID
                 ID_Box.Clear();
-                MessageBox.Show("Usunięto towar");
+              
             }
         }
     

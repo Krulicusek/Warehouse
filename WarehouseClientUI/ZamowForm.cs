@@ -35,10 +35,9 @@ namespace WarehouseClientUI
             var timout = new TimeSpan(39);
 
             var client = new ServiceReference1.WarehouseWebServiceSoapClient(timout,"https://localhost:44334/WarehouseWebService.asmx");
-            client.GetTowaryAsync();
-       
-
-             var res = new GetTowaryResponseBody();
+           client.GetTowaryAsync();
+            
+             //var res = new GetTowaryResponseBody();
             
             //var req = new WarehouseWebServiceReference.SendZamowienieRequestBody();
             //req.imie = "s";
@@ -51,7 +50,7 @@ namespace WarehouseClientUI
             //int.TryParse(IloscBox.Text,out zamowienie.ilosc);
             //zamowienie.id = 1;
             //SendZamowienieResponse response = new SendZamowienieResponse();
-            MessageBox.Show(res.ToString());
+            //MessageBox.Show();
 
         }
        private bool ValidateForm()
@@ -61,6 +60,7 @@ namespace WarehouseClientUI
             if (!validate.Number(IloscBox.Text))
             {
                 MessageBox.Show("ID must be a positive intiger");
+                output = false;
             }
             return output;
         }
