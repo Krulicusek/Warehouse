@@ -1,6 +1,6 @@
 # WarehouseUI
 
-Winform application, UI for warehouse managment system. Enables you to add, edit, delate, and view, contents of sql database that represent real warehouse objects
+Winform application, UI for warehouse managment system. Enables you to add, edit, delate, and view, contents of sql database that represent real warehouse objects.
 
 # WarehouseLibrary
 
@@ -20,7 +20,8 @@ Winform , UI for warehouse Clients, allows to browse warehouse items, and send n
 
 # WarehouseServer
 
-Sql server database, with sample data, stored procedures, and test query that allows to quicly check functionality of every piece.
+Sql server database, with sample data, stored procedures, and test query that allows to quickly check functionality of every piece.
 
 # Notes
+
 Currently still need to implement a way to use WarehouseWebService methods inside WarehouseclientUI
