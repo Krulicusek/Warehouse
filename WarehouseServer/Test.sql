@@ -80,6 +80,7 @@ EXEC dbo.spTowary_Nowy 'ogryzek','2042-03-11','smieci',200
 EXEC dbo.spZamowienia_Podglad null, null, ''
 
 --tworze nowa role oraz nadaje jej mozliwosc uzywania stored procedures
+
 CREATE ROLE dbStoredProceduresOnly;
 GRANT EXECUTE TO dbStoredProceduresOnly;
 

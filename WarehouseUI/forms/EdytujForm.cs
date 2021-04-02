@@ -55,6 +55,7 @@ namespace WarehouseUI
             if (!validate.Number(IDBox.Text))
             {
                 MessageBox.Show("ID must be a positive intiger");
+                output = false;
             }
             if (!validate.Text(NazwaBox.Text))
             {

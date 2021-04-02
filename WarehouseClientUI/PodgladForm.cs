@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WarehouseLibrary;
 using Newtonsoft.Json;
-using WarehouseWebService;
+
 
 namespace WarehouseClientUI
 {
@@ -25,9 +25,12 @@ namespace WarehouseClientUI
             //uniemozliwienie maksymalizacji okna
             this.MaximizeBox = false;
 
-            WarehouseWebService.GetTowaryResponseBody res = new WarehouseWebService.GetTowaryResponseBody();
+           
+
+            //    WarehouseWebService.GetTowaryResponseBody res = new WarehouseWebService.GetTowaryResponseBody();
+
             //WarehouseWebService.WarehouseWebServiceSoapClient client = new WarehouseWebService.WarehouseWebServiceSoapClient();
-            //towary = (TowaryDostepneModel)JsonConvert.DeserializeObject(client.GetTowaryAsync().Result);
+            ////towary = (TowaryDostepneModel)JsonConvert.DeserializeObject(client.GetTowaryAsync().Result);
             //towary.Add((TowaryDostepneModel)JsonConvert.DeserializeObject(res.GetTowaryResult));
 
             //towaryGrid.DataSource = towary;
