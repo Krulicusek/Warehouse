@@ -24,4 +24,4 @@ Sql server database, with sample data, stored procedures, and test query that al
 
 # Notes
 
-Currently still need to implement a way to use WarehouseWebService methods inside WarehouseclientUI
+App almost ready, only need to make a few visual adjustments
