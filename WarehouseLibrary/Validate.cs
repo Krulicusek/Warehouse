@@ -13,16 +13,11 @@ namespace WarehouseLibrary
             bool output = true;            
             int number = 0;
             bool ValidNumber = int.TryParse(numberString, out number);
-           if (!ValidNumber)
+           if (!ValidNumber || number <= 0)
             {
                 output = false;
             }
-           if (number <= 0)
-            {               
-                output = false;
-            }
-
-            return output;
+           return output;
         }
        
          public bool Text (string text)

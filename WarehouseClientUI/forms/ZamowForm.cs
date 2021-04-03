@@ -58,11 +58,11 @@ namespace WarehouseClientUI
 
 
         }
-       private bool ValidateForm()
+        private bool ValidateForm()
         {
             Validate validate = new Validate();
             bool output = true;
-          
+
             if (!validate.Number(IloscBox.Text))
             {
                 MessageBox.Show("Ilość must be a positive intiger");
