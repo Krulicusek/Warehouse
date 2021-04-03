@@ -34,13 +34,20 @@ namespace WarehouseWeb.Controllers
         }
         [HttpPost]
      public ActionResult Zamow(int id, ZamowieniaModel zamowienia)
-        {         
-               // jezeli wprowadzono poprawne dane 
+        {
+            // jezeli wprowadzono poprawne dane 
             if (ModelState.IsValid)
             {       // wysylam pobrane z form wartosci do bazy danych  
-                db.SendZamowienie(id, zamowienia.Ilosc, zamowienia.Imie, zamowienia.Nazwisko, zamowienia.Adres, zamowienia.Dostawa);
+                if (db.SendZamowienie(id, zamowienia.Ilosc, zamowienia.Imie, zamowienia.Nazwisko, zamowienia.Adres, zamowienia.Dostawa))
+                {
+                    return RedirectToAction("Succes");
+                }
+                //else
+                //{
+                //    return 
+                //}
             
-                return RedirectToAction("Succes");
+                
             }
             return View(zamowienia);
         }

@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WarehouseLibrary
+namespace WarehouseWeb
 {
    public  class TowaryDostepneModel
     {
-        public int ID { get; set; }
-        public string Nazwa{ get; set; }
+        public int ID_Towaru { get; set; }
+        public string Nazwa_Towaru{ get; set; }
         public DateTime Data_Gwarancji { get; set; }
-        public int  Ilosc { get; set; }
+        public int  Ilosc_Dostepnych { get; set; }
+        public TowaryDostepneModel()
+        {
+
+        }
     }
 }

@@ -7,9 +7,9 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
 namespace WarehouseService
 {
-
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace = "WarehouseWebService", ConfigurationName = "WarehouseWebServiceSoap")]
@@ -114,12 +114,20 @@ namespace WarehouseService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace = "WarehouseWebService")]
     public partial class SendZamowienieResponseBody
     {
 
+        [System.Runtime.Serialization.DataMemberAttribute(Order = 0)]
+        public bool SendZamowienieResult;
+
         public SendZamowienieResponseBody()
         {
+        }
+
+        public SendZamowienieResponseBody(bool SendZamowienieResult)
+        {
+            this.SendZamowienieResult = SendZamowienieResult;
         }
     }
 
@@ -235,7 +243,7 @@ namespace WarehouseService
             return base.Channel.SendZamowienie(request);
         }
 
-        public void SendZamowienie(int id, int ilosc, string imie, string nazwisko, string adres, string dostawa)
+        public bool SendZamowienie(int id, int ilosc, string imie, string nazwisko, string adres, string dostawa)
         {
             SendZamowienieRequest inValue = new SendZamowienieRequest();
             inValue.Body = new SendZamowienieRequestBody();
@@ -246,6 +254,7 @@ namespace WarehouseService
             inValue.Body.adres = adres;
             inValue.Body.dostawa = dostawa;
             SendZamowienieResponse retVal = ((WarehouseWebServiceSoap)(this)).SendZamowienie(inValue);
+            return retVal.Body.SendZamowienieResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -294,5 +303,4 @@ namespace WarehouseService
             return ((WarehouseWebServiceSoap)(this)).GetTowaryAsync(inValue);
         }
     }
-
 }

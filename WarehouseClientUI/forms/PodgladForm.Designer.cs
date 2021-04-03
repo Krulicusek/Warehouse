@@ -31,14 +31,29 @@ namespace WarehouseClientUI
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PodgladForm));
-            this.towaryGrid = new System.Windows.Forms.DataGridView();
             this.PodgladLabel = new System.Windows.Forms.Label();
+            this.towaryGrid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.towaryGrid)).BeginInit();
             this.SuspendLayout();
             // 
+            // PodgladLabel
+            // 
+            this.PodgladLabel.AutoSize = true;
+            this.PodgladLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PodgladLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.PodgladLabel.Location = new System.Drawing.Point(363, 9);
+            this.PodgladLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PodgladLabel.Name = "PodgladLabel";
+            this.PodgladLabel.Size = new System.Drawing.Size(292, 50);
+            this.PodgladLabel.TabIndex = 38;
+            this.PodgladLabel.Text = "Podgląd towarów";
+            // 
             // towaryGrid
             // 
+            this.towaryGrid.AllowUserToAddRows = false;
+            this.towaryGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.towaryGrid.BackgroundColor = System.Drawing.Color.White;
+            this.towaryGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -56,18 +71,6 @@ namespace WarehouseClientUI
             this.towaryGrid.RowTemplate.Height = 25;
             this.towaryGrid.Size = new System.Drawing.Size(941, 542);
             this.towaryGrid.TabIndex = 0;
-            // 
-            // PodgladLabel
-            // 
-            this.PodgladLabel.AutoSize = true;
-            this.PodgladLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PodgladLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.PodgladLabel.Location = new System.Drawing.Point(363, 9);
-            this.PodgladLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PodgladLabel.Name = "PodgladLabel";
-            this.PodgladLabel.Size = new System.Drawing.Size(292, 50);
-            this.PodgladLabel.TabIndex = 38;
-            this.PodgladLabel.Text = "Podgląd towarów";
             // 
             // PodgladForm
             // 
@@ -88,9 +91,9 @@ namespace WarehouseClientUI
 
         #endregion
 
-        private MyButton myButton1;
-        private System.Windows.Forms.DataGridView towaryGrid;
+       
         private System.Windows.Forms.Label PodgladLabel;
+        private System.Windows.Forms.DataGridView towaryGrid;
     }
 }
 

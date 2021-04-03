@@ -28,7 +28,7 @@ namespace WarehouseWeb
             }
         }
 
-        public void SendZamowienie(int id, int ilosc, string imie, string nazwisko, string adres, string dostawa)
+        public bool SendZamowienie(int id, int ilosc, string imie, string nazwisko, string adres, string dostawa)
         {
             // otwieram polaczenie z baza danych. dzieki "using " upewniam się, że polaczenie z baza danych bedzie prawidlowo zamkniete w razie gdyby w trakcie dzialania funkcji wystapił bład
             // za pomoca wczesniej stworzonej klasy CnnStringParser pobieram odpowiedniego connection stringa z pliku web.config
@@ -44,9 +44,21 @@ namespace WarehouseWeb
                     parameters.Add("@Nazwisko", nazwisko, DbType.String, ParameterDirection.Input);
                     parameters.Add("@Adres", adres, DbType.String, ParameterDirection.Input);
                     parameters.Add("@Dostawa", dostawa, DbType.String, ParameterDirection.Input);
-                    //wykonuje procedure
-                    connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                    parameters.Add("@Return", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
+                //wykonuje procedure
+                connection.Query(procedure, parameters, commandType: CommandType.StoredProcedure);
+                //Checking status of Stored Procedure Call
+                int returnValue = parameters.Get<int>("@Return");
+                if (returnValue == 0)
+                {
+                    return false;
                 }
+                else
+                {
+                    return true;
+                }
+
+        }
             }
         
 
