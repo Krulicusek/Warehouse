@@ -24,4 +24,10 @@ Sql server database, with sample data, stored procedures, and test query that al
 
 # Notes
 
-App almost ready, only need to make a few visual adjustments
+All parts of app are actually ready but there is still room for improvment.
+To do:
+
+- move all the clumsy code for form validation into a single class that handles writing messages
+- tweak the database, so there also is Users table containing all of the user's info and all of his orders
+- make it so you have an option to register as User and all of your info is automaticly apearing in the form so you can only check it and correct instead of typing it all over again
+- make option to cancel order that hasn't been completed yet
