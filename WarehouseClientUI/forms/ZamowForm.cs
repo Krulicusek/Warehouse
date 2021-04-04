@@ -47,6 +47,7 @@ namespace WarehouseClientUI
                 int.TryParse(IloscBox.Text, out ilosc);
                 if (client.SendZamowienie(id, ilosc, ImieBox.Text, NazwiskoBox.Text, AdresBox.Text, DostawaBox.Text)) {
                     MessageBox.Show("Zamowienie zostało wysłane.");
+                    ClearFields();
                     this.Hide();
                     podgladForm.Show();
                 }
@@ -92,7 +93,13 @@ namespace WarehouseClientUI
 
             return output;
         }
-
+        private void ClearFields()
+        {
+            IloscBox.Clear();
+            ImieBox.Clear();
+            NazwiskoBox.Clear();
+            AdresBox.Clear();            
+        }
         //Po wcisnieciu krzyzyka w prawym górnym rogu, okno ukrywa sie, zamiast zamykać
         //dzięki czemu można pozniej z poziomu menu znowu wrocic do tego okna
         private void HideForm_FormClosing(object sender, FormClosingEventArgs e)

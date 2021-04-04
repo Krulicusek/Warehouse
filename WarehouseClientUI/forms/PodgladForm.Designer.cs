@@ -70,7 +70,7 @@ namespace WarehouseClientUI
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.towaryGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.towaryGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.towaryGrid.GridColor = System.Drawing.Color.White;
+            this.towaryGrid.GridColor = System.Drawing.Color.LightGray;
             this.towaryGrid.Location = new System.Drawing.Point(42, 146);
             this.towaryGrid.Name = "towaryGrid";
             this.towaryGrid.RowTemplate.Height = 25;

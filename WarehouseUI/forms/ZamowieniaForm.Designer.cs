@@ -30,8 +30,8 @@ namespace WarehouseUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZamowieniaForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PodgladButton = new WarehouseUI.MyButton();
             this.BackButton = new WarehouseUI.MyButton();
             this.BackLabel = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@ namespace WarehouseUI
             this.PodgladButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PodgladButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PodgladButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.PodgladButton.Location = new System.Drawing.Point(60, 414);
+            this.PodgladButton.Location = new System.Drawing.Point(61, 414);
             this.PodgladButton.Name = "PodgladButton";
             this.PodgladButton.Size = new System.Drawing.Size(297, 89);
             this.PodgladButton.TabIndex = 4;
@@ -103,7 +103,7 @@ namespace WarehouseUI
             this.IDLabel.AutoSize = true;
             this.IDLabel.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IDLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.IDLabel.Location = new System.Drawing.Point(12, 240);
+            this.IDLabel.Location = new System.Drawing.Point(59, 256);
             this.IDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(49, 45);
@@ -113,7 +113,7 @@ namespace WarehouseUI
             // IDBox
             // 
             this.IDBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IDBox.Location = new System.Drawing.Point(277, 253);
+            this.IDBox.Location = new System.Drawing.Point(209, 269);
             this.IDBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IDBox.Name = "IDBox";
             this.IDBox.Size = new System.Drawing.Size(195, 33);
@@ -124,7 +124,7 @@ namespace WarehouseUI
             this.NazwiskoLabel.AutoSize = true;
             this.NazwiskoLabel.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NazwiskoLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.NazwiskoLabel.Location = new System.Drawing.Point(13, 284);
+            this.NazwiskoLabel.Location = new System.Drawing.Point(60, 300);
             this.NazwiskoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NazwiskoLabel.Name = "NazwiskoLabel";
             this.NazwiskoLabel.Size = new System.Drawing.Size(147, 45);
@@ -134,7 +134,7 @@ namespace WarehouseUI
             // NazwiskoBox
             // 
             this.NazwiskoBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NazwiskoBox.Location = new System.Drawing.Point(277, 297);
+            this.NazwiskoBox.Location = new System.Drawing.Point(209, 313);
             this.NazwiskoBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwiskoBox.Name = "NazwiskoBox";
             this.NazwiskoBox.Size = new System.Drawing.Size(195, 33);
@@ -145,7 +145,7 @@ namespace WarehouseUI
             this.EdytujLabel.AutoSize = true;
             this.EdytujLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EdytujLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.EdytujLabel.Location = new System.Drawing.Point(14, 113);
+            this.EdytujLabel.Location = new System.Drawing.Point(60, 115);
             this.EdytujLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EdytujLabel.Name = "EdytujLabel";
             this.EdytujLabel.Size = new System.Drawing.Size(318, 50);
@@ -157,29 +157,30 @@ namespace WarehouseUI
             this.ZamowieniaTabela.AllowUserToOrderColumns = true;
             this.ZamowieniaTabela.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.ZamowieniaTabela.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ZamowieniaTabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ZamowieniaTabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ZamowieniaTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ZamowieniaTabela.GridColor = System.Drawing.Color.LightGray;
             this.ZamowieniaTabela.Location = new System.Drawing.Point(534, 73);
             this.ZamowieniaTabela.Name = "ZamowieniaTabela";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ZamowieniaTabela.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ZamowieniaTabela.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.ZamowieniaTabela.RowTemplate.Height = 25;
             this.ZamowieniaTabela.Size = new System.Drawing.Size(808, 430);
             this.ZamowieniaTabela.TabIndex = 37;
@@ -227,7 +228,7 @@ namespace WarehouseUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(14, 190);
+            this.label1.Location = new System.Drawing.Point(60, 192);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 21);
@@ -239,7 +240,7 @@ namespace WarehouseUI
             this.AdresLabel.AutoSize = true;
             this.AdresLabel.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AdresLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AdresLabel.Location = new System.Drawing.Point(14, 329);
+            this.AdresLabel.Location = new System.Drawing.Point(61, 345);
             this.AdresLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AdresLabel.Name = "AdresLabel";
             this.AdresLabel.Size = new System.Drawing.Size(96, 45);
@@ -249,7 +250,7 @@ namespace WarehouseUI
             // AdresBox
             // 
             this.AdresBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AdresBox.Location = new System.Drawing.Point(278, 342);
+            this.AdresBox.Location = new System.Drawing.Point(210, 358);
             this.AdresBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.AdresBox.Name = "AdresBox";
             this.AdresBox.Size = new System.Drawing.Size(195, 33);
@@ -264,7 +265,7 @@ namespace WarehouseUI
             this.ShowAllButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShowAllButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShowAllButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ShowAllButton.Location = new System.Drawing.Point(60, 531);
+            this.ShowAllButton.Location = new System.Drawing.Point(59, 531);
             this.ShowAllButton.Name = "ShowAllButton";
             this.ShowAllButton.Size = new System.Drawing.Size(297, 89);
             this.ShowAllButton.TabIndex = 5;

@@ -61,7 +61,7 @@
   <data name="LogoBox.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABBhJREFUWEftl8uPFEUcx3tlWXnsHEC9ACHGxCiejXA0wXGmuweIIUZiPBAPeuAv
+        vAAADrwBlbxySQAABBhJREFUWEftl8uPFEUcx3tlWXnsHEC9ACHGxCiejXA0wXGmuweIIUZiPBAPeuAv
         gEQOJB6A3e3u3csaDghy46Asj0UPEIIJBxFjAjERkJmeWXks4IOHMSr4+dZU7fYOPbCwAycq+aRqfq/6
         1a+qunu8h23luOqtTS56YZy+GMTpIAzBS/6mO14wWLVWj6n5Uc3zB6rdfpy+xaTH4E/Lt8iKwcCF7iB6
         DEmsjFNvFbDqhUy2ES7BaXgf3oMf4TJs9uP682Ey5pX6L1jvGbYganhh35Uugr8OI3AD9sBr/qfjXjG5
@@ -85,7 +85,7 @@
   <data name="LogoBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABBhJREFUWEftl8uPFEUcx3tlWXnsHEC9ACHGxCiejXA0wXGmuweIIUZiPBAPeuAv
+        vAAADrwBlbxySQAABBhJREFUWEftl8uPFEUcx3tlWXnsHEC9ACHGxCiejXA0wXGmuweIIUZiPBAPeuAv
         gEQOJB6A3e3u3csaDghy46Asj0UPEIIJBxFjAjERkJmeWXks4IOHMSr4+dZU7fYOPbCwAycq+aRqfq/6
         1a+qunu8h23luOqtTS56YZy+GMTpIAzBS/6mO14wWLVWj6n5Uc3zB6rdfpy+xaTH4E/Lt8iKwcCF7iB6
         DEmsjFNvFbDqhUy2ES7BaXgf3oMf4TJs9uP682Ey5pX6L1jvGbYganhh35Uugr8OI3AD9sBr/qfjXjG5

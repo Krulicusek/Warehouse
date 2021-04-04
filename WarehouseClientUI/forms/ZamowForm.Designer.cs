@@ -42,7 +42,7 @@ namespace WarehouseClientUI
             this.label3 = new System.Windows.Forms.Label();
             this.ZamowButton = new WarehouseClientUI.MyButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.DostawaBox = new System.Windows.Forms.TextBox();
+            this.DostawaBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // ImieLabel
@@ -64,7 +64,7 @@ namespace WarehouseClientUI
             this.ImieBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ImieBox.Name = "ImieBox";
             this.ImieBox.Size = new System.Drawing.Size(195, 33);
-            this.ImieBox.TabIndex = 54;
+            this.ImieBox.TabIndex = 2;
             // 
             // IloscLabel
             // 
@@ -85,7 +85,7 @@ namespace WarehouseClientUI
             this.IloscBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IloscBox.Name = "IloscBox";
             this.IloscBox.Size = new System.Drawing.Size(195, 33);
-            this.IloscBox.TabIndex = 52;
+            this.IloscBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -106,7 +106,7 @@ namespace WarehouseClientUI
             this.AdresBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.AdresBox.Name = "AdresBox";
             this.AdresBox.Size = new System.Drawing.Size(195, 33);
-            this.AdresBox.TabIndex = 58;
+            this.AdresBox.TabIndex = 4;
             // 
             // label2
             // 
@@ -127,17 +127,17 @@ namespace WarehouseClientUI
             this.NazwiskoBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NazwiskoBox.Name = "NazwiskoBox";
             this.NazwiskoBox.Size = new System.Drawing.Size(195, 33);
-            this.NazwiskoBox.TabIndex = 56;
+            this.NazwiskoBox.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(106, 42);
+            this.label3.Location = new System.Drawing.Point(137, 57);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 74);
+            this.label3.Size = new System.Drawing.Size(294, 59);
             this.label3.TabIndex = 60;
             this.label3.Text = "Zamów towary";
             // 
@@ -152,7 +152,7 @@ namespace WarehouseClientUI
             this.ZamowButton.Location = new System.Drawing.Point(137, 513);
             this.ZamowButton.Name = "ZamowButton";
             this.ZamowButton.Size = new System.Drawing.Size(329, 81);
-            this.ZamowButton.TabIndex = 62;
+            this.ZamowButton.TabIndex = 7;
             this.ZamowButton.Text = "Zamów";
             this.ZamowButton.UseVisualStyleBackColor = false;
             this.ZamowButton.Click += new System.EventHandler(this.ZamowButton_Click);
@@ -172,11 +172,15 @@ namespace WarehouseClientUI
             // DostawaBox
             // 
             this.DostawaBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DostawaBox.FormattingEnabled = true;
+            this.DostawaBox.Items.AddRange(new object[] {
+            "kurier",
+            "paczkomat",
+            "odbiór osobisty"});
             this.DostawaBox.Location = new System.Drawing.Point(323, 411);
-            this.DostawaBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DostawaBox.Name = "DostawaBox";
             this.DostawaBox.Size = new System.Drawing.Size(195, 33);
-            this.DostawaBox.TabIndex = 63;
+            this.DostawaBox.TabIndex = 5;
             // 
             // ZamowForm
             // 
@@ -184,8 +188,8 @@ namespace WarehouseClientUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(617, 635);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.DostawaBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.ZamowButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -220,6 +224,6 @@ namespace WarehouseClientUI
         private System.Windows.Forms.Label label3;
         private MyButton ZamowButton;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox DostawaBox;
+        private System.Windows.Forms.ComboBox DostawaBox;
     }
 }
