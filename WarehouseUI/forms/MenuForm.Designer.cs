@@ -104,7 +104,7 @@ namespace WarehouseUI
             this.ZamowieniaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ZamowieniaButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ZamowieniaButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ZamowieniaButton.Location = new System.Drawing.Point(89, 502);
+            this.ZamowieniaButton.Location = new System.Drawing.Point(89, 501);
             this.ZamowieniaButton.Name = "ZamowieniaButton";
             this.ZamowieniaButton.Size = new System.Drawing.Size(297, 89);
             this.ZamowieniaButton.TabIndex = 5;

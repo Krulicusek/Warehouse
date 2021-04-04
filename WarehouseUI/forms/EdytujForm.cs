@@ -117,10 +117,9 @@ namespace WarehouseUI
         {
             IDBox.Clear();
             NazwaBox.Clear();
-            DataBox.Clear();
-            TypBox.Clear();
+            DataBox.Clear();            
             IloscBox.Clear();
-
+            TypBox.SelectedIndex = -1;
         }
 
     }

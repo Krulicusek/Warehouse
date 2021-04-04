@@ -148,9 +148,9 @@ namespace WarehouseUI
         private void ClearOuterFields()
         {
             NazwaBox.Clear();
-            DataBox.Clear();
-            TypBox.Clear();
+            DataBox.Clear();          
             IloscBox.Clear();
+            TypBox.SelectedIndex = -1;
         }
         private void ClearInnerFields()
         {

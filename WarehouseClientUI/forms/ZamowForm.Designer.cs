@@ -50,7 +50,7 @@ namespace WarehouseClientUI
             this.ImieLabel.AutoSize = true;
             this.ImieLabel.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ImieLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ImieLabel.Location = new System.Drawing.Point(82, 214);
+            this.ImieLabel.Location = new System.Drawing.Point(82, 226);
             this.ImieLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ImieLabel.Name = "ImieLabel";
             this.ImieLabel.Size = new System.Drawing.Size(76, 45);
@@ -71,7 +71,7 @@ namespace WarehouseClientUI
             this.IloscLabel.AutoSize = true;
             this.IloscLabel.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IloscLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.IloscLabel.Location = new System.Drawing.Point(82, 157);
+            this.IloscLabel.Location = new System.Drawing.Point(82, 169);
             this.IloscLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IloscLabel.Name = "IloscLabel";
             this.IloscLabel.Size = new System.Drawing.Size(78, 45);
@@ -92,7 +92,7 @@ namespace WarehouseClientUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(82, 335);
+            this.label1.Location = new System.Drawing.Point(82, 347);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 45);
@@ -113,7 +113,7 @@ namespace WarehouseClientUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(82, 276);
+            this.label2.Location = new System.Drawing.Point(82, 288);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 45);
@@ -162,7 +162,7 @@ namespace WarehouseClientUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(82, 399);
+            this.label4.Location = new System.Drawing.Point(82, 410);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 45);
@@ -177,7 +177,7 @@ namespace WarehouseClientUI
             "kurier",
             "paczkomat",
             "odbiór osobisty"});
-            this.DostawaBox.Location = new System.Drawing.Point(323, 411);
+            this.DostawaBox.Location = new System.Drawing.Point(323, 410);
             this.DostawaBox.Name = "DostawaBox";
             this.DostawaBox.Size = new System.Drawing.Size(195, 33);
             this.DostawaBox.TabIndex = 5;

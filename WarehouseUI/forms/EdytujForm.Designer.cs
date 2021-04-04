@@ -40,12 +40,12 @@ namespace WarehouseUI
             this.IloscLabel = new System.Windows.Forms.Label();
             this.IloscBox = new System.Windows.Forms.TextBox();
             this.TypLabel = new System.Windows.Forms.Label();
-            this.TypBox = new System.Windows.Forms.TextBox();
             this.EdytujLabel = new System.Windows.Forms.Label();
             this.IDLabel = new System.Windows.Forms.Label();
             this.IDBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TypBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -171,15 +171,6 @@ namespace WarehouseUI
             this.TypLabel.Text = "Typ towaru";
             this.TypLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // TypBox
-            // 
-            this.TypBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TypBox.Location = new System.Drawing.Point(291, 372);
-            this.TypBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TypBox.Name = "TypBox";
-            this.TypBox.Size = new System.Drawing.Size(195, 33);
-            this.TypBox.TabIndex = 4;
-            // 
             // EdytujLabel
             // 
             this.EdytujLabel.AutoSize = true;
@@ -237,12 +228,29 @@ namespace WarehouseUI
             this.label1.TabIndex = 54;
             this.label1.Text = "* Data gwarancji should be filled";
             // 
+            // TypBox
+            // 
+            this.TypBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TypBox.FormattingEnabled = true;
+            this.TypBox.Items.AddRange(new object[] {
+            "narzędzia",
+            "słodycze",
+            "zabawki",
+            "warzywa",
+            "owoce",
+            "nabiał"});
+            this.TypBox.Location = new System.Drawing.Point(291, 373);
+            this.TypBox.Name = "TypBox";
+            this.TypBox.Size = new System.Drawing.Size(195, 33);
+            this.TypBox.TabIndex = 56;
+            // 
             // EdytujForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(555, 628);
+            this.Controls.Add(this.TypBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IDLabel);
@@ -255,7 +263,6 @@ namespace WarehouseUI
             this.Controls.Add(this.IloscLabel);
             this.Controls.Add(this.IloscBox);
             this.Controls.Add(this.TypLabel);
-            this.Controls.Add(this.TypBox);
             this.Controls.Add(this.EdytujLabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.BackLabel);
@@ -280,11 +287,11 @@ namespace WarehouseUI
         private System.Windows.Forms.Label IloscLabel;
         private System.Windows.Forms.TextBox IloscBox;
         private System.Windows.Forms.Label TypLabel;
-        private System.Windows.Forms.TextBox TypBox;
         private System.Windows.Forms.Label EdytujLabel;
         private System.Windows.Forms.Label IDLabel;
         private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox TypBox;
     }
 }

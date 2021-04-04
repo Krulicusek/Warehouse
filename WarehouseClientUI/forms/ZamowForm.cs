@@ -98,7 +98,8 @@ namespace WarehouseClientUI
             IloscBox.Clear();
             ImieBox.Clear();
             NazwiskoBox.Clear();
-            AdresBox.Clear();            
+            AdresBox.Clear();
+            DostawaBox.SelectedIndex = -1;
         }
         //Po wcisnieciu krzyzyka w prawym górnym rogu, okno ukrywa sie, zamiast zamykać
         //dzięki czemu można pozniej z poziomu menu znowu wrocic do tego okna
