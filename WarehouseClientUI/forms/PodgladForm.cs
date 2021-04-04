@@ -17,7 +17,7 @@ namespace WarehouseClientUI
     public partial class PodgladForm : Form
     {
         private ZamowForm zamowForm;
-
+        private AnulujForm anulujForm;
 
         public PodgladForm()
         {
@@ -26,7 +26,9 @@ namespace WarehouseClientUI
             //uniemozliwienie maksymalizacji okna
             this.MaximizeBox = false;
             zamowForm = new ZamowForm(this);
+            anulujForm = new AnulujForm(this);
             InitializeGrid();
+            
 
         }
 
@@ -40,18 +42,25 @@ namespace WarehouseClientUI
             {
                 // filling dataGridView with database information using webservice method
                 towaryGrid.DataSource = JsonConvert.DeserializeObject(client.GetTowary());
-                // Adding a button column, and giving it some styling 
-                DataGridViewButtonColumn buttonColumn =
-                    new DataGridViewButtonColumn();
-                buttonColumn.HeaderText = "Zamów";
-                buttonColumn.Name = "Zamow";
-                buttonColumn.Text = "Zamów";
-                buttonColumn.UseColumnTextForButtonValue = true;
-                buttonColumn.FlatStyle = FlatStyle.Popup;
-                buttonColumn.DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
-                buttonColumn.DefaultCellStyle.ForeColor = SystemColors.MenuHighlight;
+                // Adding a link column, and giving it some styling 
 
-                towaryGrid.Columns.Add(buttonColumn);
+                DataGridViewLinkColumn links = new DataGridViewLinkColumn();
+                links.UseColumnTextForLinkValue = true;
+                links.HeaderText = "Zamów";
+                links.DataPropertyName = "Zamów";
+                links.ActiveLinkColor = Color.LightBlue;
+                links.LinkColor = SystemColors.Highlight;
+                links.TrackVisitedState = false;
+                links.DefaultCellStyle.NullValue = "Zamów";
+                links.Name = "Zamów";
+
+               
+                //removing the styling for selection
+                towaryGrid.DefaultCellStyle.SelectionBackColor = Color.White;
+                towaryGrid.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+
+                towaryGrid.Columns.Add(links);
                 //setting datagrid columns names
                 towaryGrid.Columns[0].HeaderText = "ID";
                 towaryGrid.Columns[1].HeaderText = "Nazwa";
@@ -68,12 +77,18 @@ namespace WarehouseClientUI
         private void towaryGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Ignore clicks that are not on button cells. 
-            if (e.RowIndex < 0 || e.ColumnIndex != towaryGrid.Columns["Zamow"].Index) return;
+            if (e.RowIndex < 0 || e.ColumnIndex != towaryGrid.Columns["Zamów"].Index) return;
             
             zamowForm.id = Convert.ToInt32(towaryGrid[1, e.RowIndex].Value);              
             this.Hide();
             zamowForm.Show();
             
+        }
+
+        private void AnulujButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            anulujForm.Show();
         }
     }
 }

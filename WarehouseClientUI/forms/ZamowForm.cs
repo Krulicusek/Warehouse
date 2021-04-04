@@ -25,6 +25,7 @@ namespace WarehouseClientUI
             this.StartPosition = FormStartPosition.CenterScreen;
             //uniemozliwienie maksymalizacji okna
             this.MaximizeBox = false;
+            
             podgladForm = mypodgladForm;
         }
 
@@ -51,7 +52,7 @@ namespace WarehouseClientUI
                 }
                 else
                 {
-                    MessageBox.Show("Wystąpił błąd przy składaniu zamówienia, prosimy spróbować ponownie.");
+                    MessageBox.Show("Wystąpił błąd przy składaniu zamówienia, sprawdz, czy zamawiana ilość nie przekracza dostępnej.");
                 }
                                 
             }
@@ -91,5 +92,19 @@ namespace WarehouseClientUI
 
             return output;
         }
+
+        //Po wcisnieciu krzyzyka w prawym górnym rogu, okno ukrywa sie, zamiast zamykać
+        //dzięki czemu można pozniej z poziomu menu znowu wrocic do tego okna
+        private void HideForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                this.Hide();
+                podgladForm.Show();
+            }
+        }
+
+       
     }
 }

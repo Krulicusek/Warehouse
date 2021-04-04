@@ -197,8 +197,11 @@ namespace WarehouseClientUI
             this.Controls.Add(this.IloscLabel);
             this.Controls.Add(this.IloscBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ZamowForm";
             this.Text = "Zamów towary";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HideForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
