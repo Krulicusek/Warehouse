@@ -16,7 +16,7 @@ Web servive providing basic functionality for WarehouseClientUI
 
 # WarehouseClientUI
 
-Winform , UI for warehouse Clients, allows to browse warehouse items, and send new orders regarding specific products
+Winform, UI for warehouse Clients, allows to browse warehouse items, and send new orders regarding specific products
 
 # WarehouseServer
 
@@ -25,6 +25,7 @@ Sql server database, with sample data, stored procedures, and test query that al
 # Notes
 
 All parts of app are actually ready but there is still room for improvment.
+
 To do:
 
 - move all the clumsy code for form validation into a single class that handles writing messages
